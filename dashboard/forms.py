@@ -22,3 +22,8 @@ class HomeworkForm(forms.ModelForm):
             'due':DateInput(),
         }
         fields=['subject','title','description','due','isFinished']
+
+
+
+class DashboardForm(forms.Form):
+    text=forms.CharField(max_length=100,label="Enter your search")
